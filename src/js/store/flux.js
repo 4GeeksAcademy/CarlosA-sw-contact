@@ -3,6 +3,11 @@ const getState = ({ getStore, getActions, setStore }) => {
 		store: {
 			agendaName : "xXcarlos117Xx2",
 			base_url: "https://playground.4geeks.com/apis/fake/contact/",
+			avaliableViews : {
+				'contact' : {'name':'Contact List','link':'/contact'},
+				'swchar' : {'name':'StarWars - Characters','link':'/sw/characters'},
+				'swpla' : {'name':'StarWars - Planets','link':'/sw/planets'},
+			}
 		},
 		actions: {
 
