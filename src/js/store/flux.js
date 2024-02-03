@@ -3,7 +3,6 @@ const getState = ({ getStore, getActions, setStore }) => {
 		store: {
 			agendaName : "xXcarlos117Xx2",
 			base_url: "https://playground.4geeks.com/apis/fake/contact/",
-			contactosInAgenda: "",
 		},
 		actions: {
 
@@ -33,7 +32,6 @@ const getState = ({ getStore, getActions, setStore }) => {
 
 			getAllContacts : async () => {
 
-				// Retorna directamente el valor del GET
 				return await getActions().APICall("agenda/"+getStore().agendaName);
 			},
 
@@ -41,7 +39,6 @@ const getState = ({ getStore, getActions, setStore }) => {
 
 			getContact : async (id) => {
 
-				// Retorna directamente el valor del GET
 				return await getActions().APICall(id);
 			},
 
@@ -54,12 +51,16 @@ const getState = ({ getStore, getActions, setStore }) => {
 				return await getActions().APICall(id,options);
 			},
 
-			deleteAgenda : async (id) => {
+			// DELETE - Borrar todos los contactos de la {agenda}
+
+			deleteAgenda : async (agenda) => {
 				const options = {
 					method: 'DELETE',
 				}
-				return await getActions().APICall("agenda/"+id,options);
+				return await getActions().APICall("agenda/"+agenda,options);
 			},
+
+			// PUT - Actualizar los datos del contacto {id} con {data}
 
 			updateContact : async (id,data) => {
 				const options = {
@@ -71,6 +72,8 @@ const getState = ({ getStore, getActions, setStore }) => {
 				}
 				return await getActions().APICall(id,options);
 			},
+
+			// POST - Añadir contacto con {data}
 
 			addContact : async (data) => {
 				const options = {
