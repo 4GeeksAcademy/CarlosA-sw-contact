@@ -30,7 +30,7 @@ export const ContactList = () => {
     navigate("/details/" + item.id + "/view")
   }
 
-  const handleAdd = (item) => {
+  const handleAdd = () => {
     navigate("/details/" + '0' + "/add")
   }
 
