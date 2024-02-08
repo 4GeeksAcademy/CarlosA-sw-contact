@@ -117,14 +117,14 @@ export const SWDetails = () => {
                                                 <ListGroup.Item key={key}>
                                                     <strong>{translations[key] || key}: </strong>
                                                     {key == 'homeworld' ? (
-                                                        <Link to={`/sw/planets/${details[key].split('/').pop()}`}>
-                                                            {`/sw/planets/${details[key].split('/').pop()}`}
+                                                        <Link to={`/planets/${details[key].split('/').pop()}`}>
+                                                            {`/planets/${details[key].split('/').pop()}`}
                                                         </Link>
                                                     ) : key == 'people' ? (
                                                         details[key].map((peopleUrl, index) => (
                                                             <li key={index}>
-                                                                <Link to={`/sw/people/${peopleUrl.split('/').pop()}`}>
-                                                                    {`/sw/people/${peopleUrl.split('/').pop()}`}
+                                                                <Link to={`/people/${peopleUrl.split('/').pop()}`}>
+                                                                    {`/people/${peopleUrl.split('/').pop()}`}
                                                                 </Link>
                                                             </li>
                                                         ))

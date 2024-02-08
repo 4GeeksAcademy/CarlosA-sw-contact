@@ -25,8 +25,8 @@ const Layout = () => {
 					<NavegationBar />
 					<Routes>
 						<Route path="/" element={<Home />} />
-						<Route path="/sw/:category" element={<SWInfo />} />
-						<Route path="/sw/:category/:id" element={<SWDetails />} />
+						<Route path="/:category" element={<SWInfo />} />
+						<Route path="/:category/:id" element={<SWDetails />} />
 						<Route path="/contact" element={<ContactList />} />
 						<Route path="/details/:id/:mode" element={<ContactDetails />} />
 						<Route path="*" element={<h1>Not found!</h1>} />

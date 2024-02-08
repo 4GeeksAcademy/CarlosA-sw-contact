@@ -47,7 +47,7 @@ export const SWInfo = () => {
                                 <Card.Title>{item.name}</Card.Title>
                             </Card.Body>
                             <Card.Footer className="d-flex justify-content-between">
-                                <Link to={`/sw/${category}/${item.uid}`} className="me-auto">
+                                <Link to={`/${category}/${item.uid}`} className="me-auto">
                                     <Button variant="secondary">Detalles</Button>
                                 </Link>
                                 <Button variant="primary" onClick={() => handleAddToFavorites(item.name)}>

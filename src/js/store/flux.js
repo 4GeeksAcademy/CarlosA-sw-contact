@@ -7,11 +7,11 @@ const getState = ({ getStore, getActions, setStore }) => {
 			favorites: [],
 			avaliableViews: {
 				'contact': { 'name': 'Contact List', 'link': '/contact' },
-				'swCharacter': { 'name': 'StarWars - Personajes', 'link': '/sw/people' },
-				'swPlanet': { 'name': 'StarWars - Planetas', 'link': '/sw/planets' },
-				'swSpecies': { 'name': 'StarWars - Especies', 'link': '/sw/species' },
-				'swShips': { 'name': 'StarWars - Naves', 'link': '/sw/starships' },
-				'swVehicles': { 'name': 'StarWars - Vehiculos', 'link': '/sw/vehicles' },
+				'swCharacter': { 'name': 'StarWars - Personajes', 'link': '/people' },
+				'swPlanet': { 'name': 'StarWars - Planetas', 'link': '/planets' },
+				'swSpecies': { 'name': 'StarWars - Especies', 'link': '/species' },
+				'swShips': { 'name': 'StarWars - Naves', 'link': '/starships' },
+				'swVehicles': { 'name': 'StarWars - Vehiculos', 'link': '/vehicles' },
 			},
 			types: ['people', 'planets', 'species', 'starships', 'vehicles']
 		},
