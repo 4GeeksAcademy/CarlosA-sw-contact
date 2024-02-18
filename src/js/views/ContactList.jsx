@@ -23,19 +23,14 @@ export const ContactList = () => {
   // Funciones de navegación a Details
 
   const handleEdit = (item) => {
-
-    // Navegar a la página de detalles con el id del contacto + modo "edit"
     navigate("/details/" + item.id + "/edit")
   }
 
   const handleView = (item) => {
-
-    // Navegar a la página de detalles con el id del contacto + modo "view"
     navigate("/details/" + item.id + "/view")
   }
 
   const handleAdd = () => {
-
     // Navegar a la página de detalles con el id 0 + modo "add"
     // Para añadir un contacto no se necesita proveer de id, la API se encarga
     navigate("/details/" + '0' + "/add")
@@ -72,14 +67,12 @@ export const ContactList = () => {
   // Función para obtener datos
 
   const fetchData = async () => {
-
-    // Obtener la lista de agendas y la lista de contactos de dicha agenda desde la API
     setAgendaList(await actions.getAllAgendas());
     setContactList(await actions.getAllContacts());
   };
 
 
-  // Efecto que se ejecuta cuando se carga la vista
+  // Efecto para cargar datos al montar el componente
 
   useEffect(() => {
     fetchData();
