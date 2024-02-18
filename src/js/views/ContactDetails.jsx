@@ -155,7 +155,7 @@ export const ContactDetails = () => {
                 </Card>
                 <div className="d-flex justify-content-between">
                     <Link to="/contact"><Button variant="danger">Volver</Button></Link>
-                    {params.mode == 'edit' || params.mode == 'add' && <Button type="submit" variant="success">Guardar cambios</Button>}
+                    {(params.mode == 'edit' || params.mode == 'add') && <Button type="submit" variant="success">Guardar cambios</Button>}
                 </div>
             </Form>
         </Container>
