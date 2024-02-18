@@ -31,6 +31,8 @@ export const ContactList = () => {
   }
 
   const handleAdd = () => {
+    // Navegar a la página de detalles con el id 0 + modo "add"
+    // Para añadir un contacto no se necesita proveer de id, la API se encarga
     navigate("/details/" + '0' + "/add")
   }
 
