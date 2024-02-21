@@ -1,3 +1,10 @@
 /* 
     General Styles
 */
+
+.carrouselImg{
+    max-width: 800px;
+    max-height: 400px;
+    display: block;
+    margin: 0 auto;
+}
